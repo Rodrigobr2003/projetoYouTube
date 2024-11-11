@@ -1,0 +1,55 @@
+.sidebar-content {
+  overflow-y: scroll;
+}
+
+.sidebar-content,
+.division {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.division {
+  width: 90%;
+  border-bottom: 1px solid gray;
+  padding: 15px 0;
+}
+
+.division button {
+  width: 95%;
+  background-color: #0f0f0f;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1em;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.division button:hover {
+  background-color: #272727;
+}
+
+.division button fa-icon {
+  font-size: 1.4em;
+  margin-right: 15%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.int button:first-child {
+  font-size: 1.1em;
+}
+
+.division h2 {
+  width: 85%;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
