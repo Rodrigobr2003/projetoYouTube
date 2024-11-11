@@ -10,10 +10,91 @@
 app-barra-lateral {
   width: 20%;
   height: 100%;
-  border: 1px solid green;
 }
 
 section {
   width: 80%;
   height: 100%;
+}
+
+.topbar {
+  /* display: flex;  */
+  align-items: center;
+  background-color: #0f0f0f;
+  padding: 10px 5px;
+  /* position: relative; */
+}
+
+.caroseul {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.topbar button {
+  background-color: #262626;
+  color: #fff;
+  border: none;
+  margin: 0 5px;
+  font-size: 1em;
+  padding: 7px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.topbar button:hover {
+  background-color: #3b3b3b;
+}
+
+.videos-sect {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  width: 30%;
+  cursor: pointer;
+  margin: 10px 10px 20px 10px;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.video-info .avatar-photo {
+  width: 15%;
+}
+
+.video-info img {
+  width: 100%;
+  border-radius: 180px;
+}
+
+.video-info .details {
+  width: 85%;
+  padding-left: 10px;
+}
+
+.video-info .details h1 {
+  font-size: 1.1em;
+  width: 100%;
+}
+
+.video-info .details *:not(:first-child) {
+  text-decoration: none;
+  font-size: 0.9em;
+  color: rgb(112, 112, 112);
 }
