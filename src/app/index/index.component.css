@@ -10,6 +10,25 @@
 app-barra-lateral {
   width: 20%;
   height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+app-barra-lateral::-webkit-scrollbar {
+  background-color: #0f0f0f;
+  width: 7px;
+}
+
+app-barra-lateral::-webkit-scrollbar-button {
+  display: none;
+}
+
+app-barra-lateral::-webkit-scrollbar-thumb {
+  background-color: #0f0f0f;
+}
+
+app-barra-lateral:hover::-webkit-scrollbar-thumb {
+  background-color: #717171;
 }
 
 section {
