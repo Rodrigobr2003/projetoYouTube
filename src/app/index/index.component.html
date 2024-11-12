@@ -1,151 +1,19 @@
 <div class="content-index">
   <app-barra-lateral></app-barra-lateral>
 
-  <!-- <section>
+  <section>
     <div class="topbar">
       <div class="caroseul">
-        <button>Tudo</button>
-        <button>Jogos</button>
-        <button>Música</button>
-        <button>Mixes</button>
-        <button>Podcasts</button>
-        <button>Notícias</button>
-        <button>Electro-Pop</button>
-        <button>Futebol</button>
-        <button>Artes</button>
-        <button>Vídeos engraçados</button>
-        <button>For you</button>
+        <button *ngFor="let n of navBarTop">{{ n }}</button>
       </div>
     </div>
 
     <div class="videos-sect">
-      <div class="video-card">
-        <img src="../../assets/images/video1.png" alt="thumbnail" />
-
-        <div class="video-info">
-          <div class="avatar-photo">
-            <img
-              src="../../assets/images/avatar-photo.png"
-              alt="avatar-photo"
-            />
-          </div>
-
-          <div class="details">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-
-            <a href="">yotube_channel123</a>
-
-            <p>7,6 mil visualizações <span>&bull;</span> há 4 dias</p>
-          </div>
-
-          <div class="options">
-            <fa-icon [icon]="options"></fa-icon>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <img src="../../assets/images/video2.png" alt="thumbnail" />
-
-        <div class="video-info">
-          <div class="avatar-photo">
-            <img
-              src="../../assets/images/avatar-photo.png"
-              alt="avatar-photo"
-            />
-          </div>
-
-          <div class="details">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-
-            <a href="">yotube_channel123</a>
-
-            <p>7,6 mil visualizações <span>&bull;</span> há 4 dias</p>
-          </div>
-
-          <div class="options">
-            <fa-icon [icon]="options"></fa-icon>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <img src="../../assets/images/video3.png" alt="thumbnail" />
-
-        <div class="video-info">
-          <div class="avatar-photo">
-            <img
-              src="../../assets/images/avatar-photo.png"
-              alt="avatar-photo"
-            />
-          </div>
-
-          <div class="details">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-
-            <a href="">yotube_channel123</a>
-
-            <p>7,6 mil visualizações <span>&bull;</span> há 4 dias</p>
-          </div>
-
-          <div class="options">
-            <fa-icon [icon]="options"></fa-icon>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <img src="../../assets/images/video4.png" alt="thumbnail" />
-
-        <div class="video-info">
-          <div class="avatar-photo">
-            <img
-              src="../../assets/images/avatar-photo.png"
-              alt="avatar-photo"
-            />
-          </div>
-
-          <div class="details">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-
-            <a href="">yotube_channel123</a>
-
-            <p>7,6 mil visualizações <span>&bull;</span> há 4 dias</p>
-          </div>
-
-          <div class="options">
-            <fa-icon [icon]="options"></fa-icon>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <img src="../../assets/images/video5.png" alt="thumbnail" />
-
-        <div class="video-info">
-          <div class="avatar-photo">
-            <img
-              src="../../assets/images/avatar-photo.png"
-              alt="avatar-photo"
-            />
-          </div>
-
-          <div class="details">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-
-            <a href="">yotube_channel123</a>
-
-            <p>7,6 mil visualizações <span>&bull;</span> há 4 dias</p>
-          </div>
-
-          <div class="options">
-            <fa-icon [icon]="options"></fa-icon>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <img src="../../assets/images/video6.png" alt="thumbnail" />
+      <div class="video-card" *ngFor="let n of videos; let i = index">
+        <img
+          [src]="'../../assets/images/video' + (i + 1) + '.png'"
+          alt="thumbnail"
+        />
 
         <div class="video-info">
           <div class="avatar-photo">
@@ -169,5 +37,5 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 </div>

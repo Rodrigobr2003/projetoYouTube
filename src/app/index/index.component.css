@@ -32,6 +32,7 @@ app-barra-lateral:hover::-webkit-scrollbar-thumb {
 }
 
 section {
+  margin-left: auto;
   width: 80%;
   height: 100%;
 }
