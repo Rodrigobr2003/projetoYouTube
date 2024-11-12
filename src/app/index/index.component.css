@@ -32,26 +32,39 @@ app-barra-lateral:hover::-webkit-scrollbar-thumb {
 }
 
 section {
+  margin-left: auto;
   width: 80%;
   height: 100%;
 }
 
 .topbar {
-  /* display: flex;  */
+  display: flex;
   align-items: center;
   background-color: #0f0f0f;
   padding: 10px 5px;
-  /* position: relative; */
 }
 
 .caroseul {
   display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+  overflow: hidden;
   width: 100%;
+  height: 100%;
 }
 
 .topbar button {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 180px;
+  border: none;
+  cursor: pointer;
+}
+
+.topbar button:hover {
+  background-color: #3f3f3f;
+}
+
+.topbar .caroseul button {
   background-color: #262626;
   color: #fff;
   border: none;

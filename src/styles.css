@@ -8,4 +8,14 @@
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  background-color: #0f0f0f;
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ababab;
 }
