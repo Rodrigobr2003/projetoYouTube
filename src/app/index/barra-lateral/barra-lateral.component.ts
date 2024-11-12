@@ -22,6 +22,7 @@ import {
   faFlag,
   faCircleQuestion,
   faExclamation,
+  faStar,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -52,4 +53,7 @@ export class BarraLateralComponent {
   flag = faFlag;
   circleQuestion = faCircleQuestion;
   exclamation = faExclamation;
+  star = faStar;
+
+  youtubeChannels = [1, 2, 3, 4, 5, 6];
 }

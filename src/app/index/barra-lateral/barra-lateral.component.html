@@ -16,6 +16,10 @@
 
   <div class="division">
     <h2>Inscrições</h2>
+    <button *ngFor="let n of youtubeChannels">
+      <img src="../../../assets/images/avatar-photo.png" alt="foto do avatar" />
+      YouTube channel
+    </button>
   </div>
 
   <div class="division">
@@ -35,6 +39,19 @@
 
   <div class="division">
     <h2>Mais do YouTube</h2>
+
+    <button>
+      <fa-icon [icon]="star" style="color: #ff0033"></fa-icon> YouTube Premium
+    </button>
+    <button>
+      <fa-icon [icon]="star" style="color: #ff0033"></fa-icon> YouTube Studio
+    </button>
+    <button>
+      <fa-icon [icon]="star" style="color: #ff0033"></fa-icon> YouTube Music
+    </button>
+    <button>
+      <fa-icon [icon]="star" style="color: #ff0033"></fa-icon> YouTube Kids
+    </button>
   </div>
 
   <div class="division">
