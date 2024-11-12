@@ -49,3 +49,9 @@
   margin-bottom: 5px;
   font-size: 1.1em;
 }
+
+.division:has(h2:first-child) img {
+  width: 15%;
+  border-radius: 180px;
+  margin-right: 10%;
+}
