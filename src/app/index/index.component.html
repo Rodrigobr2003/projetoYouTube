@@ -3,9 +3,15 @@
 
   <section>
     <div class="topbar">
+      <button (click)="scrollLeft()">
+        <fa-icon [icon]="leftBtn"></fa-icon>
+      </button>
       <div class="caroseul">
         <button *ngFor="let n of navBarTop">{{ n }}</button>
       </div>
+      <button (click)="scrollRight()">
+        <fa-icon [icon]="rightBtn"></fa-icon>
+      </button>
     </div>
 
     <div class="videos-sect">
