@@ -1,4 +1,11 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  inject,
+  OnInit,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
 import {
   faEllipsisVertical,
   faAngleLeft,
@@ -12,7 +19,7 @@ import {
   templateUrl: './index.component.html',
   styleUrl: './index.component.css',
 })
-export class IndexComponent {
+export class IndexComponent implements OnInit {
   options = faEllipsisVertical;
   leftBtn = faAngleLeft;
   rightBtn = faAngleRight;
@@ -47,6 +54,26 @@ export class IndexComponent {
   videos = [1, 2, 3, 4, 5, 6];
 
   shortsArr = [1, 2, 3, 4, 5];
+
+  renderer = inject(Renderer2);
+
+  ngOnInit(): void {
+    const searchBar = document.querySelector('app-barra-pesquisa');
+    const sideBar = document.querySelector('app-barra-lateral');
+    const section = document.querySelector('section');
+
+    this.renderer.setStyle(
+      sideBar,
+      'margin-top',
+      `${searchBar.clientHeight}px`
+    );
+
+    this.renderer.setStyle(
+      section,
+      'margin-top',
+      `${searchBar.clientHeight}px`
+    );
+  }
 
   scrollLeft() {
     const caroseul = document.querySelector('.caroseul');
