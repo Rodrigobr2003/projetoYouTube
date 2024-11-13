@@ -1,5 +1,7 @@
 <div class="content-index">
-  <app-barra-lateral></app-barra-lateral>
+  <app-barra-pesquisa></app-barra-pesquisa>
+
+  <!-- <app-barra-lateral></app-barra-lateral>
 
   <section>
     <div class="topbar">
@@ -43,5 +45,141 @@
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="shorts-sect">
+      <div class="shorts-top">
+        <div class="display">
+          <fa-icon [icon]="shorts"></fa-icon>
+          <h3>Shorts</h3>
+        </div>
+
+        <fa-icon [icon]="close"></fa-icon>
+      </div>
+
+      <div class="shorts">
+        <div class="card" *ngFor="let n of shortsArr">
+          <div class="teste"></div>
+
+          <div>
+            <h2>Lorem ipsum dolor sit amet</h2>
+
+            <p>11 mi de visualizações</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="videos-sect">
+      <div class="video-card" *ngFor="let n of videos; let i = index">
+        <img
+          [src]="'../../assets/images/video' + (i + 1) + '.png'"
+          alt="thumbnail"
+        />
+
+        <div class="video-info">
+          <div class="avatar-photo">
+            <img
+              src="../../assets/images/avatar-photo.png"
+              alt="avatar-photo"
+            />
+          </div>
+
+          <div class="details">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+            <a href="">yotube_channel123</a>
+
+            <p>7,6 mil visualizações <span>&bull;</span> há 4 dias</p>
+          </div>
+
+          <div class="options">
+            <fa-icon [icon]="options"></fa-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="videos-sect">
+      <div class="video-card" *ngFor="let n of videos; let i = index">
+        <img
+          [src]="'../../assets/images/video' + (i + 1) + '.png'"
+          alt="thumbnail"
+        />
+
+        <div class="video-info">
+          <div class="avatar-photo">
+            <img
+              src="../../assets/images/avatar-photo.png"
+              alt="avatar-photo"
+            />
+          </div>
+
+          <div class="details">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+            <a href="">yotube_channel123</a>
+
+            <p>7,6 mil visualizações <span>&bull;</span> há 4 dias</p>
+          </div>
+
+          <div class="options">
+            <fa-icon [icon]="options"></fa-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shorts-sect">
+      <div class="shorts-top">
+        <div class="display">
+          <fa-icon [icon]="shorts"></fa-icon>
+          <h3>Shorts</h3>
+        </div>
+
+        <fa-icon [icon]="close"></fa-icon>
+      </div>
+
+      <div class="shorts">
+        <div class="card" *ngFor="let n of shortsArr">
+          <div class="teste"></div>
+
+          <div>
+            <h2>Lorem ipsum dolor sit amet</h2>
+
+            <p>11 mi de visualizações</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="videos-sect">
+      <div class="video-card" *ngFor="let n of videos; let i = index">
+        <img
+          [src]="'../../assets/images/video' + (i + 1) + '.png'"
+          alt="thumbnail"
+        />
+
+        <div class="video-info">
+          <div class="avatar-photo">
+            <img
+              src="../../assets/images/avatar-photo.png"
+              alt="avatar-photo"
+            />
+          </div>
+
+          <div class="details">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+            <a href="">yotube_channel123</a>
+
+            <p>7,6 mil visualizações <span>&bull;</span> há 4 dias</p>
+          </div>
+
+          <div class="options">
+            <fa-icon [icon]="options"></fa-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 </div>

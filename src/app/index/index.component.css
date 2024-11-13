@@ -7,6 +7,12 @@
   color: #fff;
 }
 
+app-barra-pesquisa {
+  width: 100%;
+  position: fixed;
+  background-color: #0f0f0f;
+}
+
 app-barra-lateral {
   width: 20%;
   height: 100%;
@@ -127,6 +133,81 @@ section {
 
 .video-info .details *:not(:first-child) {
   text-decoration: none;
+  font-size: 0.9em;
+  color: rgb(112, 112, 112);
+}
+
+.shorts-sect {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.shorts-sect,
+.display,
+.shorts-top,
+.shorts {
+  display: flex;
+  align-items: center;
+}
+
+.shorts-top {
+  width: 95%;
+}
+
+.shorts-sect .shorts-top fa-icon:last-child {
+  font-size: 2.5em;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.shorts-sect .display {
+  margin-left: 30px;
+  font-size: 1.2em;
+}
+
+.shorts-sect .display fa-icon {
+  color: #ff0033;
+  margin-right: 15px;
+}
+
+.shorts {
+  margin: 30px 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card {
+  width: 200px;
+  margin: 0 7px;
+  cursor: pointer;
+}
+
+.teste {
+  background-image: url("../../assets/images/default-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 100%;
+  min-height: 325px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card div {
+  margin-top: 5px;
+}
+
+.card h2 {
+  font-size: 1.1em;
+}
+
+.card p {
   font-size: 0.9em;
   color: rgb(112, 112, 112);
 }

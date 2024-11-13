@@ -1,0 +1,95 @@
+.search-bar {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+
+.search-bar * {
+  display: flex;
+  align-items: center;
+}
+
+.left-sec {
+  width: 15%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.left-sec fa-icon {
+  margin-left: 20px;
+}
+
+.left-sec img {
+  width: 55%;
+  margin-left: 30px;
+}
+
+.mid-sec {
+  width: 65%;
+  justify-content: center;
+}
+
+.teste {
+  width: 60%;
+  border: 1px solid rgb(59, 59, 59);
+  border-radius: 180px;
+}
+
+.mid-sec .search {
+  width: 100%;
+}
+
+.search input {
+  width: 100%;
+  background-color: #0f0f0f;
+  border-radius: 180px 0 0 180px;
+  border: none;
+  color: #687568;
+  font-size: 1em;
+  outline: none;
+  padding: 8px 15px;
+}
+
+.search input:focus {
+  border: 5px;
+  color: #fff;
+}
+
+.search-btn {
+  background-color: #222222;
+  padding: 10px 15px 10px 30px;
+  border: none;
+  border-radius: 0 180px 180px 0;
+  cursor: pointer;
+}
+
+.search-btn fa-icon {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.right-sec {
+  width: 20%;
+  justify-content: space-around;
+}
+
+.right-sec > * {
+  border-radius: 180px;
+  border: none;
+  background-color: #0f0f0f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.right-sec button:hover {
+  background-color: #272727;
+}
+
+.right-sec button {
+  padding: 10px 11px;
+  font-size: 1.2em;
+}
+
+.right-sec img {
+  width: 15%;
+}

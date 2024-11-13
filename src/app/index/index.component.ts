@@ -3,6 +3,8 @@ import {
   faEllipsisVertical,
   faAngleLeft,
   faAngleRight,
+  faPlay,
+  faXmark,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -14,6 +16,8 @@ export class IndexComponent {
   options = faEllipsisVertical;
   leftBtn = faAngleLeft;
   rightBtn = faAngleRight;
+  shorts = faPlay;
+  close = faXmark;
 
   pressed = false;
   startX = 0;
@@ -41,6 +45,8 @@ export class IndexComponent {
   ];
 
   videos = [1, 2, 3, 4, 5, 6];
+
+  shortsArr = [1, 2, 3, 4, 5];
 
   scrollLeft() {
     const caroseul = document.querySelector('.caroseul');

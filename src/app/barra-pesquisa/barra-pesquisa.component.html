@@ -1,1 +1,27 @@
-<p>barra-pesquisa works!</p>
+<div class="search-bar">
+  <div class="left-sec">
+    <fa-icon [icon]="bars"></fa-icon>
+
+    <img src="../../assets/images/YouTube-Logo.png" alt="youtube-logo" />
+  </div>
+
+  <div class="mid-sec">
+    <div class="teste">
+      <div class="search">
+        <input type="text" placeholder="Pesquisar" />
+      </div>
+
+      <button class="search-btn">
+        <fa-icon [icon]="search"></fa-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class="right-sec">
+    <button><fa-icon [icon]="camera"></fa-icon></button>
+
+    <button><fa-icon [icon]="bell"></fa-icon></button>
+
+    <img src="../../assets/images/avatar-photo.png" alt="foto-perfil" />
+  </div>
+</div>
