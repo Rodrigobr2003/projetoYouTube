@@ -15,7 +15,11 @@
     </div>
 
     <div class="videos-sect">
-      <div class="video-card" *ngFor="let n of videos; let i = index">
+      <div
+        class="video-card"
+        *ngFor="let n of videos; let i = index"
+        (click)="navigateToVideo()"
+      >
         <img
           [src]="'../../assets/images/video' + (i + 1) + '.png'"
           alt="thumbnail"

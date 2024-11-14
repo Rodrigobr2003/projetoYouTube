@@ -1,4 +1,5 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import {
   faEllipsisVertical,
   faAngleLeft,
@@ -48,6 +49,8 @@ export class IndexComponent {
 
   shortsArr = [1, 2, 3, 4, 5];
 
+  constructor(private router: Router) {}
+
   scrollLeft() {
     const caroseul = document.querySelector('.caroseul');
 
@@ -64,5 +67,9 @@ export class IndexComponent {
       left: 400,
       behavior: 'smooth',
     });
+  }
+
+  navigateToVideo() {
+    this.router.navigate(['/video']);
   }
 }
