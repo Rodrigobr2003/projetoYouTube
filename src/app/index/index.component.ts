@@ -1,10 +1,10 @@
+import { DOCUMENT } from '@angular/common';
 import {
+  AfterViewInit,
   Component,
-  ElementRef,
   inject,
-  OnInit,
+  Injectable,
   Renderer2,
-  ViewChild,
 } from '@angular/core';
 import {
   faEllipsisVertical,
@@ -19,7 +19,7 @@ import {
   templateUrl: './index.component.html',
   styleUrl: './index.component.css',
 })
-export class IndexComponent implements OnInit {
+export class IndexComponent implements AfterViewInit {
   options = faEllipsisVertical;
   leftBtn = faAngleLeft;
   rightBtn = faAngleRight;
@@ -55,12 +55,13 @@ export class IndexComponent implements OnInit {
 
   shortsArr = [1, 2, 3, 4, 5];
 
+  document = inject(DOCUMENT);
   renderer = inject(Renderer2);
 
-  ngOnInit(): void {
-    const searchBar = document.querySelector('app-barra-pesquisa');
-    const sideBar = document.querySelector('app-barra-lateral');
-    const section = document.querySelector('section');
+  ngAfterViewInit(): void {
+    const searchBar = this.document.querySelector('app-barra-pesquisa');
+    const sideBar = this.document.querySelector('app-barra-lateral');
+    const section = this.document.querySelector('section');
 
     this.renderer.setStyle(
       sideBar,
