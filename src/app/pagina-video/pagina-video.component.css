@@ -1,0 +1,234 @@
+section {
+  display: flex;
+  flex-direction: row;
+  background-color: #0f0f0f;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.left-side,
+.right-side,
+.video-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-side {
+  width: 60%;
+}
+
+.right-side {
+  width: 40%;
+}
+
+.video-div,
+.description,
+.comments {
+  width: 90%;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.video {
+  width: 100%;
+}
+
+.video iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 18px;
+}
+
+.video-info h1 {
+  font-size: 1.5em;
+  padding-left: 5px;
+}
+
+.video-info > div {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.video-info div img {
+  width: 5%;
+  margin-left: 5px;
+  border-radius: 180px;
+}
+
+.video-info div button {
+  background-color: #272727;
+  border-radius: 18px;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.video-info div button:hover {
+  background-color: #3f3f3f;
+}
+
+.video-info div button:last-child {
+  padding: 8px 16px;
+}
+
+.video-info div .display-btn {
+  background-color: #272727;
+  border-radius: 18px;
+}
+
+.video-info div .display-btn button:first-child {
+  background: none;
+  border-radius: 18px 0 0 18px;
+}
+
+.video-info div .display-btn button:last-child {
+  background: none;
+  border-radius: 0 18px 18px 0;
+}
+
+.video-info div .display-btn button:hover {
+  background-color: #3f3f3f;
+}
+
+.video-info div .display-btn button:first-child {
+  border-right: 1px solid #7c7c7c;
+}
+
+.description {
+  background-color: #272727;
+  margin-top: 10px;
+  border-radius: 12px;
+  display: flex;
+}
+
+.description .text {
+  width: 45%;
+  padding: 10px 15px;
+}
+
+.description > p:last-child {
+  margin-top: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.comments {
+  margin-top: 30px;
+}
+
+.comments .top-com {
+  display: flex;
+}
+
+.comments .top-com button {
+  margin-left: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.comments .top-com button fa-icon {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.comments .write-sec {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.comments .write-sec img {
+  width: 7%;
+  border-radius: 180px;
+}
+
+.comments .write-sec input {
+  margin-left: 10px;
+  width: 85%;
+  border: none;
+  padding: 5px 0px;
+  background: none;
+  font-size: 1em;
+  border-bottom: 2px solid #717171;
+}
+
+.comments .write-sec input:focus {
+  outline: none;
+}
+
+.comments .comment-sec {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.comments .comment-sec .comment {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.cmt-pht {
+  width: 7%;
+}
+
+.cmt-pht img {
+  width: 100%;
+  border-radius: 180px;
+}
+
+.cmt-txt {
+  width: 90%;
+  margin-left: 15px;
+}
+
+.cmt-txt h3 span {
+  font-size: 0.8em;
+  color: #717171;
+}
+
+.comment div h3 {
+  font-size: 0.9em;
+}
+
+.comment div p {
+  font-size: 0.9em;
+}
+
+.cmt-int {
+  margin-top: 10px;
+}
+
+.cmt-int button {
+  background: none;
+  border: none;
+  color: #717171;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.cmt-int button fa-icon {
+  font-size: 1.4em;
+  color: #717171;
+}
+
+.answers {
+  background: none;
+  border: none;
+  margin-top: 10px;
+  color: #2b85fa;
+  cursor: pointer;
+  font-size: 1em;
+}

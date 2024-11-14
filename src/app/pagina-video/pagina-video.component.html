@@ -1,1 +1,98 @@
-<p>pagina-video works!</p>
+<section>
+  <div class="left-side">
+    <div class="video-div">
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/jNQXAC9IVRw?si=Zr9bwUgSKVhv1QIR"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="video-info">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+        <div>
+          <img src="../../assets/images/avatar-photo.png" alt="foto do canal" />
+
+          <button>Seja membro</button>
+          <button>Inscrever-se</button>
+
+          <div class="display-btn">
+            <button><fa-icon [icon]="thumbsUp"></fa-icon> 3,8 mil</button>
+            <button><fa-icon [icon]="thumbsDown"></fa-icon></button>
+          </div>
+
+          <button><fa-icon [icon]="share"></fa-icon> Compartilhar</button>
+          <button><fa-icon [icon]="option"></fa-icon></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="description">
+      <div class="text">
+        <p>27.127 visualizações há 3 horas</p>
+
+        <p>📚COMPRE MEU LIVRO: https://livro.com.br</p>
+
+        <p>Seja membro deste canal e ganhe benefícios:</p>
+      </div>
+
+      <p>...mais</p>
+    </div>
+
+    <div class="comments">
+      <div class="top-com">
+        <h1>1 comentário</h1>
+
+        <button><fa-icon [icon]="bars"></fa-icon> Ordenar por</button>
+      </div>
+
+      <div class="write-sec">
+        <img src="../../assets/images/avatar-photo.png" alt="foto de perfil" />
+
+        <input type="text" placeholder="Adicione um comentário..." />
+      </div>
+
+      <div class="comment-sec">
+        <div class="comment">
+          <div class="cmt-pht">
+            <img
+              src="../../assets/images/avatar-photo.png"
+              alt="foto de perfil"
+            />
+          </div>
+
+          <div class="cmt-txt">
+            <h3>Nome do perfil <span>há 1 hora</span></h3>
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
+              maxime obcaecati veritatis error quis vero exercitationem nam,
+              temporibus beatae consectetur veniam inventore laborum? Molestias
+              exercitationem facere id cumque molestiae eaque?
+            </p>
+
+            <div class="cmt-int">
+              <button><fa-icon [icon]="thumbsUp"></fa-icon> 53</button>
+              <button><fa-icon [icon]="thumbsDown"></fa-icon></button>
+            </div>
+
+            <button class="answers">
+              <fa-icon [icon]="angleDown"></fa-icon> 4 respostas
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-side">
+    <p>aaa</p>
+    <div class="caroseul"></div>
+
+    <div class="recommended-videos"></div>
+  </div>
+</section>
